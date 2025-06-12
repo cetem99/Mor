@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Aurea</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-style: italic;
+    }
+    header .heart {
+      font-size: 2em;
+      margin-top: 10px;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 100px;
+      bottom: 20px;
+      left: 50%;
+      width: 4px;
+      background-color: #000000;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    .timeline h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .event {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 60px 0;
+      position: relative;
+      z-index: 1;
+    }
+    .event:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .date {
+      background-color: black;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      z-index: 1;
+    }
+    .content {
+      background: #f3f3f3;
+      margin: 0 30px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      z-index: 1;
+    }
+    .content img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .content h3 {
+      margin: 0 0 10px;
+    }
+    .content p {
+      color: #555;
+      font-size: 0.9em;
+    }
+    .final-message {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .final-message h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .final-message .card {
+      background-color: white;
+      color: #333;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-style: italic;
+    }
+    .final-message .card p {
+      margin-bottom: 20px;
+    }
+    .final-message .card .signature {
+      text-align: right;
+      font-weight: bold;
+      font-style: normal;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      padding: 20px;
+      background-color: #f8f8f8;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Para Aurea</h1>
+    <p><em>Nossa história de amor</em></p>
+    <div class="heart">❤</div>
+  </header>
+
+  <section class="timeline">
+    <h2>Nossa Linha do Tempo</h2>
+
+    <div class="event">
+      <div class="date">27/03/2023</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.20.jpeg" alt="Foto do evento">
+        <h3>Nosso primeiro encontro</h3>
+        <p>Aquele dia especial em que nos conhecemos e tudo começou...</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">15/08/2023</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.22.jpeg" alt="Foto do evento">
+        <h3>Nosso passeio de barco no lago</h3>
+        <p>2 malucos alcoolatras</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">28/08/2023</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.21.jpeg" alt="Foto do evento">
+        <h3>Nossa primeira festa fantasia</h3>
+        <p>2 fachineiro que tinha ideia de fazer uma festa...</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">08/06/2024</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.21 (1).jpeg" alt="Foto do evento">
+        <h3>Nosso primeiro Festa junina</h3>
+        <p>Nossa primeira festa junina lidaso...</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">08/06/2024</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.21 (2).jpeg" alt="Foto do evento">
+        <h3>So dorme esse bixinho no meu ombro</h3>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">15/12/2024</div>
+      <div class="content">
+        <img src="WhatsApp Image 2025-06-12 at 12.27.21 (3).jpeg" alt="Foto do evento">
+        <h3>Natal</h3>
+        <p>Foi rapido mais foi divertido e confortável</p>
+      </div>
+    </div>
+  
+
+  <div class="event">
+    <button style="background:black; color:white; padding:10px 20px; border-radius:20px; border:none; margin-bottom:20px; cursor:pointer;">Adicionar Nova Memória</button>
+  </div>
+</section>
+  <section class="final-message">
+    
+    <h2>Minha Mensagem Para Você</h2>
+    <div class="card">
+      <p>Aurea, cada momento ao seu lado é especial. Seu sorriso ilumina meus dias e seu amor transforma minha vida. Obrigado por compartilhar tantos momentos incríveis comigo. Este é apenas um pequeno gesto para mostrar o quanto você significa para mim.</p>
+      <p>Feliz Dia dos Namorados! Que possamos continuar escrevendo nossa história juntos, criando memórias que durarão para sempre.</p>
+      <p class="signature">Com todo meu amor,<br>Seu amor</p>
+    </div>
+  </section>
+
+  <footer>
+    Feito com ❤️ para Aurea | Dia dos Namorados 2024
+  </footer>
+</body>
+</html>
